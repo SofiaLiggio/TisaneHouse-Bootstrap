@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll(".btn-success");
+const decrease = document.querySelectorAll("#minus");
 
 buttons.forEach((button) => {
   let count = 0;
