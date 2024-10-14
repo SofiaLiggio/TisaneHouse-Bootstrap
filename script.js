@@ -1,13 +1,15 @@
-const buttons = document.querySelectorAll(".btn-success");
-const decrease = document.querySelectorAll("#minus");
+const btnPlus = document.getElementById("plus");
+const btnMinus = document.getElementById("minus");
+const btnNumber = document.getElementById("btn");
 
-buttons.forEach((button) => {
-  let count = 0;
-
-  const incrementNumber = button.querySelector(".badge");
-
-  button.addEventListener("click", function () {
-    count++;
-    incrementNumber.textContent = count;
-  });
+btnPlus.addEventListener("click", function () {
+  btnNumber.textContent++;
 });
+
+btnMinus.addEventListener("click", function () {
+  if (btnNumber.textContent > 0) {
+    btnNumber.textContent--;
+  }
+});
+
+// UTILIZZARE IL FOREACH PER GLI ALTRI BTNS
