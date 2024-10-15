@@ -1,15 +1,23 @@
-const btnPlus = document.getElementById("plus");
-const btnMinus = document.getElementById("minus");
-const btnNumber = document.getElementById("btn");
+const btnPlus = document.querySelectorAll("#plus");
+const btnMinus = document.querySelectorAll("#minus");
+const btnNumber = document.querySelectorAll("#btn");
 
-btnPlus.addEventListener("click", function () {
-  btnNumber.textContent++;
+btnPlus.forEach((btnIncrease) => {
+  btnIncrease.addEventListener("click", function () {
+    const theNumberBtn = btnIncrease
+      .closest(".btn-success")
+      .querySelector("#btn");
+    theNumberBtn.textContent++;
+  });
 });
 
-btnMinus.addEventListener("click", function () {
-  if (btnNumber.textContent > 0) {
-    btnNumber.textContent--;
-  }
+btnMinus.forEach((btnDecrease) => {
+  btnDecrease.addEventListener("click", function () {
+    const theNumberBtn = btnDecrease
+      .closest(".btn-success")
+      .querySelector("#btn");
+    if (theNumberBtn.textContent > 0) {
+      theNumberBtn.textContent--;
+    }
+  });
 });
-
-// UTILIZZARE IL FOREACH PER GLI ALTRI BTNS
