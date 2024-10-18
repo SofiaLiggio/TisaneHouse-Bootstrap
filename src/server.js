@@ -15,4 +15,6 @@ app.post("/forms", async function (req, res) {
   res.json({ message: "Email inviata!" });
 });
 
+app.post("/profili");
+
 app.listen(3000, () => console.log("http://localhost:3000"));
