@@ -17,4 +17,10 @@ app.post("/forms", async function (req, res) {
 
 app.post("/profili");
 
+app.post("/register");
+
+app.post("/login");
+
+app.get("/profile");
+
 app.listen(3000, () => console.log("http://localhost:3000"));
