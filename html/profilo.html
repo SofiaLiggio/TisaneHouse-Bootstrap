@@ -39,58 +39,63 @@
       </div>
     </nav>
 
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" />
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder="1234 Main St"
-        />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress2"
-          placeholder="Apartment, studio, or floor"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity" />
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip" />
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Check me out </label>
+    <div class="container my-5 text-center">
+      <h1>Crea il tuo profilo</h1>
+      <p class="lead">
+        Entra a far parte del gruppo TisaneHouse e acquista prodotti naturali
+        validi per il tuo benessere.
+      </p>
+      <p class="lead">
+        La registrazione è gratuita e ti permette di avere accesso a sconti e
+        promozioni riservati solo ai nostri utenti.
+      </p>
+      <p class="lead">
+        I nuovi scritti riceveranno in omaggio un codice sconto del 10% sulla
+        loro prima spesa.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputNome" class="form-label">Nome</label>
+              <input type="text " class="form-control" id="inputNome" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputCognome" class="form-label">Cognome</label>
+              <input type="text" class="form-control" id="inputCognome" />
+            </div>
+
+            <div class="col-12">
+              <label for="inputIndirizzo" class="form-label">Indirizzo</label>
+              <input type="text" class="form-control" id="inputIndirizzo" />
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputCittà" class="form-label">Città</label>
+              <input type="text" class="form-control" id="inputCittà" />
+            </div>
+            <div class="col-md-4">
+              <label for="inputCellulare" class="form-label">Cellulare</label>
+              <input type="tel" class="form-control" id="inputCellulare" />
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputPassword" class="form-label"
+                >Crea password</label
+              >
+              <input type="password" class="form-control" id="inputPassword" />
+            </div>
+
+            <div class="col-12 m-3">
+              <button type="button" class="btn btn-warning">Registrati</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
+    </div>
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid" style="background-color: #8fbc8f">
