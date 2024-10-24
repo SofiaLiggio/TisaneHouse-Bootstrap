@@ -1,3 +1,5 @@
+// Collegato a index.html per i bottoni "aggiungi"
+
 const btnPlus = document.querySelectorAll("#plus");
 const btnMinus = document.querySelectorAll("#minus");
 const btnNumber = document.querySelectorAll("#btn");
